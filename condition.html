@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional</title>
+  </head>
+  <body>
+    <script>
+      let divisi = prompt("Masukan divisi : ");
+      let tugas;
+
+      if (divisi === "HR" || divisi === "hr") {
+        tugas = "Merekrut Karyawan baru";
+      } else if (divisi === "CEO" || divisi === "ceo") {
+        tugas = "Managemen perusahaan";
+      } else if (divisi === "Direktur") {
+        tugas = "Mengawasi tugas karyawan";
+      } else {
+        console.log("Jabatan tidak ditemukan");
+      }
+
+      alert(`Divisi ${divisi} bertugas ${tugas}`);
+    </script>
+  </body>
+</html>
